@@ -1,0 +1,33 @@
+
+sudo: required
+
+#os yang mau dipae
+dist: trusty
+
+#bahasa yang digunakan
+language: php
+
+#versi bahasa yang mau digunakan
+pgp:
+    - 7.1
+
+#tentukan branch
+branches:
+  only;
+    - master #->staging
+    - develop #-> devserver 
+
+#before install
+before_install:
+  - wget https://phar.phpunit.de/phpunit-6.5.phar
+  - chmod +x phpunit-6.5.phar
+  - sudo mv phpunit-6.5.phar /usr/local/bin/phpunit
+  - phpunit --version
+
+#install
+install:
+
+#before script  -> sebelum mian execution
+before_script:
+
+script:
