@@ -13,7 +13,7 @@ pgp:
 
 #tentukan branch
 branches:
-  only;
+  only:
     - master #->staging
     - develop #-> devserver 
 
