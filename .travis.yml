@@ -29,5 +29,7 @@ install:
 
 #before script  -> sebelum mian execution
 before_script:
+  #sda
 
 script:
+  #pas script
