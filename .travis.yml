@@ -8,7 +8,7 @@ dist: trusty
 language: php
 
 #versi bahasa yang mau digunakan
-pgp:
+php:
     - 7.1
 
 #tentukan branch
@@ -26,7 +26,7 @@ before_script:
   #sda
 
 script:
-  ./vendor/bin/phpunit
+  - ./vendor/bin/phpunit
 
   #pas script
 
